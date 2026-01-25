@@ -1,0 +1,144 @@
+.page {
+  max-width: 1100px;
+  margin: 25px auto;
+  padding: 16px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.subtitle {
+  margin-top: 6px;
+  color: #555;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  padding: 18px;
+  margin-top: 18px;
+}
+
+.formGrid {
+  display: grid;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.label {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.input,
+.select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+}
+
+.input:focus,
+.select:focus {
+  border-color: black;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.08);
+}
+
+.btnRow {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.btn {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+.btnPrimary {
+  background: black;
+  color: white;
+}
+
+.btnGreen {
+  background: #16a34a;
+  color: white;
+}
+
+.btnBlue {
+  background: #2563eb;
+  color: white;
+}
+
+.btnLight {
+  background: #f6f5f3;
+  color: black;
+  border: 1px solid #e5e7eb;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #f3f4f6;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.tableWrap {
+  overflow-x: auto;
+  margin-top: 12px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.table th {
+  background: #fafafa;
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.smallText {
+  font-size: 13px;
+  color: #666;
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: 22px;
+  }
+  .card {
+    padding: 14px;
+  }
+  .btn {
+    width: 100%;
+  }
+}

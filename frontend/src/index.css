@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #eff1f1; 
+  min-height: 100vh;
+}
+
+.navbar {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  background: rgb(204, 201, 201);
+  border-bottom: 1px solid #ccc; 
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #111;
+}
+
+.navRight {
+  display: flex;
+  gap: 12px;
+}
+
+.navLink {
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 0px; 
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+  transition: 0.2s ease-in-out;
+}
+
+.navLink:hover {
+  background: #f0f0f0;
+}
+
+.activeLink {
+  background: black;
+  color: white;
+}
+
+.page {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 800;
+  color: #111;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-top: 8px;
+}
+
+.card {
+  background: white;
+  padding: 18px;
+  border-radius: 0px; 
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  box-shadow: none; 
+}
+
+.smallText {
+  font-size: 13px;
+  color: #666;
+  margin-top: 8px;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.input,
+select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bbb;
+  border-radius: 0px; 
+  outline: none;
+  margin-top: 4px;
+}
+
+.input:focus,
+select:focus {
+  border-color: black;
+}
+
+.btnRow {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 12px 18px;
+  border-radius: 0px; 
+  border: 1px solid #bbb;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.btnPrimary {
+  background: black;
+  color: white;
+  border: 1px solid black;
+}
+
+.btnPrimary:hover {
+  background: #222;
+}
+
+.btnLight {
+  background: #f1f1f1;
+  color: #111;
+}
+
+.btnLight:hover {
+  background: #e1e1e1;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 14px;
+  margin-top: 14px;
+}
+
+@media (max-width: 700px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .btnRow {
+    flex-direction: column;
+  }
+}
+
+.tableWrap {
+  margin-top: 15px;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.table th {
+  background: #f3f3f3;
+  font-weight: 700;
+}
