@@ -1,6 +1,7 @@
 package com.tournament.backend.controller;
 
 import com.tournament.backend.dto.CreateTournamentRequest;
+import com.tournament.backend.dto.TournamentResponse;
 import com.tournament.backend.model.Tournament;
 import com.tournament.backend.service.MatchService;
 import com.tournament.backend.service.TournamentService;
@@ -22,8 +23,8 @@ public class TournamentController {
     }
 
     @GetMapping("/{id}")
-    public Tournament getTournament(@PathVariable String id) {
-        return tournamentService.getTournament(id);
+    public TournamentResponse getTournament(@PathVariable String id) {
+        return tournamentService.getTournamentWithDetails(id);
     }
 
     @PostMapping("/{id}/generate")

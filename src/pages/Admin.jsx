@@ -164,7 +164,6 @@ export default function Admin() {
   const clearSchedule = () => {
     localStorage.removeItem("adminMatches");
     setMatches([]);
-    alert("Schedule cleared");
   };
 
   const canCreate =
